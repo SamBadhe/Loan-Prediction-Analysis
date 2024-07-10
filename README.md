@@ -25,9 +25,19 @@ To automate and enhance the loan approval process by providing:
 5. **Prediction for New Applicants**: Interactive loan status prediction.
 6. **Results Storage**: In MongoDB for future use.
 
+## Setup Instructions
+1. Install the required libraries:
+pip install pandas scikit-learn pymongo
+2. Ensure MongoDB is running locally on port 27017.
+3. Load your CSV data into the csv_data collection in the loan_approval database.
+4. Run the script to train the model and make predictions.
+
 ## Example Usage
 To predict loan status for a new applicant, use the `predict_loan_status` function which collects user input interactively:
 
 ```python
 predicted_status = predict_loan_status()
 print(f'Predicted Loan Status: {predicted_status}')
+
+
+
